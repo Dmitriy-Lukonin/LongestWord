@@ -26,7 +26,7 @@ print('---'*45)
 print('Наиболее часто встречающееся слово (слова) из тех, что имеют размер более трех символов\n',
       [word for word in recurring if recurring[word] == max(recurring.values())])
 
-# Создаем списки русских и английских слов
+# Создаем список английских слов
 # без использования Python RegEx нужен цикл for i in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 regex = "[a-zA-Z]"
 pattern = re.compile(regex)
